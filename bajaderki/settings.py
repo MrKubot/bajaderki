@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('BAJADERKI_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG_STATE')
 
-ALLOWED_HOSTS = ['bigbagofbajaderki.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['bigbagofbajaderki.herokuapp.com', 'roundedhedgehog.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
