@@ -1,0 +1,64 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Bajaderki!
+{% endblock title %}
+
+{% block style %}
+    <style>
+      .carousel{
+          padding: 2% 25% 2% 25%;
+          text-align: center;
+          color: rgb(53, 53, 53);
+      }
+      .glowny{
+          text-align: center;
+      }
+      .carousel-item{
+          font-size: 2em;
+      }
+      .jumbotron{
+          height: 100%;
+      }
+    </style>
+{% endblock %}
+
+
+{% block body %}
+
+<div class="jumbotron">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <p>"Prędkość pochłaniania bajaderki jest wprost proporcjonalna do prędkości światła"</p><br>
+          ~Albert Einstein
+      </div>
+      <div class="carousel-item">
+        <p>"Bajaderki są najlepszym co spotkało światy i mogę udowodnić to matematycznie"</p><br>
+          ~Rick Sanchez C-137
+      </div>
+      <div class="carousel-item">
+        <p>"Niebieskie bajaderki to przyszłość biznesu"</p><br>
+          ~Walter White
+      </div>
+    </div>
+  </div>
+
+
+  
+<div class="glowny">
+    <h1>🧁🧁🧁</h1><br>
+
+    <h4>Z takimi osobistościami nie ma co się kłócić. <br>
+    Nie pozostaje więc nic innego jak tylko ruszyć na poszukiwanie nowych bajaderek!<br>
+    Jeżeli znajdziesz jakieś perełki - zdradź gdzie je znaleźć <a href="/dodaj/">tutaj!</a> ^^</h4>
+</div>
+
+</div>
+
+
+
+    
+
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+
+{% block body %}
+
+
+{% load crispy_forms_tags %}
+
+    <div class="d-flex justify-content-center">
+    <form method="post" action="/dodaj/">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <br>
+        <button type="submit" class="btn btn-success">Dodaj Bajadere</button>
+    </form>
+    <br>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'main/base.html' %}
+
+{% block body %}
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nazwa Lokalu</th>
+        <th scope="col">Ocena</th>
+        <th scope="col">Link</th>
+      </tr>
+    </thead>
+    <tbody>
+
+        {% for bajaderka in bajaderki %}
+
+        <tr>
+            <th scope="row">{{bajaderka.id}}</th>
+            <td>{{bajaderka.nazwa}}</td>
+            <td>{{bajaderka.ocena}}</td>
+            <td><a href={{bajaderka.adres}}>Link</a></td>
+          </tr>
+
+        {% endfor %}
+
+    </tbody>
+  </table>
+
+{% endblock %}
